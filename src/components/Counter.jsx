@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "/src/styles.css";
 
-function Counter() {
-  const [count, setCount] = useState(0);
+function Counter(props) {
+  const [count, setCount] = useState(props.value);
 
   function handleZero() {
     return count === 0 ? "Zero" : count;
