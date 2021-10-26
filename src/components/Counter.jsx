@@ -24,6 +24,7 @@ function Counter(props) {
 
   return (
     <div className="App">
+      <h5>{"Product " + props.title}</h5>
       <span className={getBadgeClasses()}>{handleZero()}</span>
       <button onClick={handleIncrement} className="btn btn-primary">
         Increment
